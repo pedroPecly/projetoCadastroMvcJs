@@ -96,7 +96,7 @@ class ProdutoController{
 
     calculaTotal(){
         let total = this._produtos.reduce((pTotal, p) =>{
-            return pTotal + parseFloat(p.valor);
+            return pTotal + parseFloat(p.ValorTotal());
         },0);
         this.divTotal.innerHTML = "R$ " + total;
     }
