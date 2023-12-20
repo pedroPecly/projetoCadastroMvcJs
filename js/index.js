@@ -1,1 +1,1 @@
-let pc = new PessoaController();
+let pc = new ProdutoController();

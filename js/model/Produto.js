@@ -1,8 +1,8 @@
-class Pessoa{
+class Produto{
     _id;
     _nome;
-    _salario;
-    _sobrenome;
+    _qtdProduto;
+    _valor;
     
     get id() {
         return this._id;
@@ -19,31 +19,31 @@ class Pessoa{
     get nome() {
         return this._nome;
     }
+
     set nome(value) {
         this._nome = value;
     }  
     
-    get salario() {
-        return this._salario;
+    get qtdProduto() {
+        return this._qtdProduto;
     }
-    set salario(value) {
-        this._salario = value;
+    set qtdProduto(value) {
+        this._qtdProduto = value;
     } 
     
-    get sobrenome() {
-        return this._sobrenome;
+    get valor() {
+        return this._valor;
     }
-    set sobrenome(value) {
-        this._sobrenome = value;
+    set valor(value) {
+        this._valor = value;
     }  
-    
-    NomeCompleto(){
-        return `${this.nome} ${this.sobrenome}`; 
+
+    ValorTotal(){
+        return this._valor * this._qtdProduto;
     }
 
     constructor(){
         this.id = 0;
     }
-
-    
+   
 }

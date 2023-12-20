@@ -11,10 +11,10 @@
 
 <body>
     <div class="d-flex flex-column justify-content-between">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <a class="navbar-brand" href="#">
-                <img src="img/iff.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Instituto Federal Fluminense
+                <img src="img/mercado.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Sistema Mercado
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,39 +26,39 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Cursos</a>
+                        <a class="nav-link" href="#">Cashback</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Noticias</a>
+                        <a class="nav-link" href="#">Promoções</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <main class="alturaPg ml-3">
-            <h3>Cadastro de pessoas</h3> 
+            <h3>Cadastro de Produtos</h3> 
             <label>Código:</label>           
             <input type="text" id="inpCodigo" class="form-control col-md-1" readonly value="0">
             <label>Nome:</label>
-            <input type="text" id="inpNome" class="form-control col-md-4">
-            <label>Sobrenome</label>
-            <input type="text" id="inpSobreNome" class="form-control col-md-4">
-            <label>Salário</label>
-            <input type="number"  id="inpSalario" class="form-control col-md-2">
+            <input type="text" id="inpNome" class="form-control col-md-2">
+            <label>Valor</label>
+            <input type="number" id="inpValor" class="form-control col-md-1">
+            <label>Qtd. Estoque</label>
+            <input type="number"  id="inpQtd" class="form-control col-md-1">
 
             <button id="btnSalvar" class="btn btn-info mt-3">Salvar</button>
 
             <table class="table col-md-10 mt-2">
-                <thead class="thead-dark">
-                    <tr>
+                <thead class="thead-info">
+                    <tr class="table-info">
                         <th>Código</th>
                         <th>Nome</th>
-                        <th>Sobrenome</th>
-                        <th>Salário</th>
-                        <th>Nome Completo</th>
+                        <th>Valor</th>
+                        <th>Qtd. Estoque</th>
+                        <th>Valor Total em Produtos</th>
                         <th>Opções</th>
                     </tr>
                 </thead>
-                <tbody id="bodyPessoa">
+                <tbody id="bodyProduto">
 
                 </tbody>
             </table>
@@ -66,8 +66,8 @@
         </main>
 
         <footer>
-            <div class="bg-dark text-light rodape ">
-                INSTITUTO FEDERAL FLUMINENSE
+            <div class="bg-info text-light rodape ">
+                SISTEMA MERCADO
              </div>
         </footer>
     </div>     
@@ -76,8 +76,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/model/Pessoa.js"></script>
-    <script src="js/controller/PessoaController.js"></script>
+    <script src="js/model/Produto.js"></script>
+    <script src="js/controller/ProdutoController.js"></script>
     <script src="js/index.js"></script>
 </body>
 
